@@ -28,6 +28,10 @@ A minimal, ready-to-use template for creating Hytale plugins with modern build t
 ```bash
 git clone https://github.com/yourusername/hytale-plugin-template.git
 cd hytale-plugin-template
+# For Windows
+.\setup-server.ps1
+# For Mac / Linux
+./setup-server.sh
 ```
 
 **The template builds immediately without any changes!**  
@@ -128,8 +132,8 @@ TemplatePlugin/
 │   └── src/main/kotlin/
 │       └── RunHytalePlugin.kt       # Automated server testing
 ├── src/main/
-│   ├── java/com/example/templateplugin/
-│   │   └── TemplatePlugin.java      # Minimal main class (example)
+│   ├── kotlin/com/example/templateplugin/
+│   │   └── TemplatePlugin.kt      # Minimal main class (example)
 │   └── resources/
 │       └── manifest.json            # Plugin metadata
 ├── .gitignore                       # Git ignore rules
@@ -328,10 +332,7 @@ GitHub Actions will automatically build and create a release with your plugin JA
 
 For detailed guides on plugin development, see:
 
-- [Hytale Modding Documentation](https://github.com/yourusername/hytale-modding/tree/main/Documentation)
-- [Getting Started with Plugins](../Documentation/07-getting-started-with-plugins.md)
-- [Advanced Plugin Patterns](../Documentation/12-advanced-plugin-patterns.md)
-- [Common Plugin Features](../Documentation/14-common-plugin-features.md)
+- [Hytale Modding Documentation](https://hytalemodding.dev/en/docs)
 
 ---
 
@@ -354,9 +355,7 @@ This template is released under the MIT License. You are free to use it for any 
 
 ## Support
 
-- **Issues:** [GitHub Issues](https://github.com/yourusername/hytale-plugin-template/issues)
-- **Documentation:** [Hytale Modding Docs](https://github.com/yourusername/hytale-modding)
-- **Community:** Join the Hytale modding community
+- **Issues:** [GitHub Issues](https://github.com/toliner/hytale-plugin-template-kotlin/issues)
 
 ---
 
