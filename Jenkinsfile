@@ -18,15 +18,7 @@ spec:
   }
 
   stages {
-    stage('Build') {
-      steps {
-        container('java') {
-          sh './gradlew build'
-        }
-      }
-    }
-    
-    stage('Package') {
+    stage('Build & Package') {
       steps {
         container('java') {
           sh './gradlew shadowJar'
